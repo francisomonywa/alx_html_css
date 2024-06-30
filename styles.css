@@ -1,138 +1,127 @@
- /* Flexbox Layout */
- 
- body {
-     display: flex;
-     flex-direction: column;
-     font-family: Arial, sans-serif;
- }
- 
- main {
-     display: flex;
-     flex-direction: row;
-     flex: auto;
- }
- 
- article {
-     flex: 2;
-     overflow-y: auto;
-     padding: 20px;
-     background-color: #f9f9f9;
-     border-right: 2px solid #ddd;
- }
- 
- aside {
-     flex: 1;
-     overflow-y: auto;
-     padding: 20px;
-     background-color: #f1f1f1;
- }
- 
- header,
- footer {
-     padding: 20px;
-     background-color: #333;
-     color: white;
-     text-align: center;
- }
- 
- header ul {
-     list-style-type: none;
-     padding: 0;
-     display: flex;
-     justify-content: center;
- }
- 
- header ul li {
-     margin: 0 15px;
- }
- 
- header ul li a {
-     color: white;
-     text-decoration: none;
-     font-weight: bold;
- }
- 
- header ul li a:hover {
-     text-decoration: underline;
- }
- 
- .logo {
-     font-size: 24px;
-     margin-right: 20px;
- }
- /* Article Content Styling */
- 
- article h2 {
-     color: #333;
- }
- 
- article p {
-     line-height: 1.6;
- }
- 
- article a {
-     color: #007BFF;
-     text-decoration: none;
- }
- 
- article a:hover {
-     text-decoration: underline;
- }
- /* Footer Styling */
- 
- footer p {
-     margin: 0;
-     font-size: 14px;
- }
- 
- footer a {
-     color: #007BFF;
-     text-decoration: none;
- }
- 
- footer a:hover {
-     text-decoration: underline;
- }
- /* Additional Styles */
- 
- body {
-     background-color: #e0e0e0;
- }
- 
- h1 {
-     font-size: 2em;
-     color: #222;
- }
- 
- h2 {
-     font-size: 1.5em;
-     color: #222;
- }
- /* Placeholder to add comment thread later */
- 
- aside p {
-     color: #777;
- }
- /* Customizations */
- 
- p {
-     font-size: 1em;
-     color: #555;
- }
- /* Flexbox for main content */
- 
- main h1 {
-     width: 100%;
-     text-align: center;
-     margin-top: 0;
- }
- 
- blockquote.twitter-tweet {
-     margin: 20px auto;
-     max-width: 550px;
- }
- /* Style for Embedded Tweet Section */
- 
- main p {
-     margin: 10px 0;
- }
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(../source-sans-pro/SourceSansPro-Bold.otf) url(../source-sans-pro/SourceSansPro-Semibold.otf) url(../source-sans-pro/SourceSansPro-Light.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../images/Object.png);
+    /* background-repeat: no-repeat; */
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+nav {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 235px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 220px;
+}
+
+.title {
+    font-size: 120px;
+    font-weight: 700;
+    text-align: center;
+}
+
+span {
+    text-transform: uppercase;
+    margin-right: 60px;
+}
+
+.btn {
+    text-transform: uppercase;
+    background-color: #c271ff;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 17.5px;
+    padding: 13px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 40px;
+}
+
+.hero-section>h2>span {
+    color: #c271ff;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.hero-section>h2 {
+    font-weight: 100;
+    margin-top: 170px;
+}
+
+.pros {
+    /* width: 220px; */
+    display: flex;
+    margin-top: 90px;
+}
+
+.pro-1,
+.pro-2,
+.pro-3,
+.pro-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-1,
+.pro-2,
+.pro-3 {
+    margin-right: 140px;
+}
+
+.pros>div>img {
+    width: 150px;
+    height: 150px;
+}
+
+.pros>div>h3 {
+    width: 150px;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.pros>div>p {
+    width: 150px;
+    font-style: italic;
+    font-weight: 400;
+}
