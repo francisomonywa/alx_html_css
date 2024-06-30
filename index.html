@@ -1,106 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Francis Omonywa - Personal Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>My first webpage</title>
+    <link href="base.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: rgb(168, 169, 176);
-        }
-        
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-            background: #444;
-            margin: 0;
-        }
-        
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        
-        section {
-            padding: 2rem 1rem;
-        }
-        
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
+        table,
+        th,
+        td {
+            border: 1px solid black;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Francis Omonywa</h1>
-        <p>Web Developer & Designer
-        </p>
-    </header>
-    <nav>
         <ul>
-            <li><a href="#Introduction">Introduction</a></li>
-            <li><a href="#Project">Project</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="file:///C:/Users/franc/OneDrive/Desktop/html_basic/index.html">Home</a></li>
+            <li><a href="file:///C:/Users/franc/OneDrive/Desktop/html_basic/tweets.html">Tweets</a></li>
+
         </ul>
-    </nav>
-    <section id="Intoduction">
-        <h2>Introdution</h2>
-        <p>Hello!I'm Francis Omonywa, a passionate web Develooper with a knack for creating engaging and user friendly web experiences.Welcome to my profolio!</p>
-
-    </section>
-    <section id="Project">
-        <h2>Project </h2>
-        <article class="projects">
-            <h3>Project One</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, quidem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, quidem.</p>
-            <a href="https://github.com/francisomonywa/My_First_Portfolio/blob/master/index.html" target="_blank">View Project</a>
+    </header>
+    <main>
+        <article>
+            <h1>Welcome to my Website</h1>
+            <p>This is the home page.Here you can find various information about my website.</p>
+            <h2>About me</h2>
+            <h3>My Work</h3>
+            <p>Check out my profolio for more information about my projects and skills.</p>
+            <p><a href="https://www.sophiebritt.com/">Visit my profolio</a></p>
+            <h3>My Hobbies</h3>
+            <ul>
+                <li>Reading</li>
+                <li>Writing</li>
+                <li>Coding</li>
+            </ul>
+            <!--Table of learners-->
+            <h2>Information about learners</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Francis</td>
+                        <td>22</td>
+                        <td>Nigeria</td>
+                    </tr>
+                    <tr>
+                        <td>Sophie</td>
+                        <td>22</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>22</td>
+                        <td>Australia</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>22</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>22</td>
+                        <td>Kenya</td>
+                    </tr>
+                </tbody>
+            </table>
         </article>
-        <article class="projects">
-            <h3>Project Two</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, quidem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, quidem.</p>
-            <a href="https://github.com/francisomonywa/My_First_Portfolio/blob/master/index.html" target="_blank">View Project</a>
-        </article>
-        <!--Add more projects as needed-->
-    </section>
-    <section id="About">
-        <h2>About Me</h2>
-        <p>I'm a self taught web developer with a background in graphic design.My skills include HTML,CSS,Javascipt and other frameworks like React and Vue.js.In my free timme ,I enjoy hhiking,reading and exploring new technologies.</p>
-
-    </section>
-    <section id="Contact">
-        <h2>Contact</h2>
-        <p>Email:<a href="mailto:francisomonywa37@gmail.com">francisomonywa37@gmail.com</a></p>
-        <p>Linkedin:<a href="https://www.linkedin.com/Francisomonywa" target="_blank">Francis Omonywa</a></p>
-        <p>Github:<a href="https://github.com/francisomonywa" target="_blank">Francis Omonywa</a></p>
-    </section>
+        <aside>
+            <p>placeholder to add comment thread later</p>
+        </aside>
+    </main>
     <footer>
-        <p>Copyright &copy; 2019 Francis omonywa</p>
+        <p>Made by Francis Omonywa- <a href="https://x.com/home" target="_blank">here</a></p>
     </footer>
+    <!--
+    <h1>My first webpage</h1>
+    <p>This is my first webpage</p>
+    <h2>This is a second heading</h2>
+    <p>This is my second paragraph</p>
+    <h3>This is a third heading</h3>
+    <p>This is my third paragraph</p>
+    <p>This a fourth paragraph</p>
+-->
+    <a href="https://www.alxafrica.com">
+        <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" style="width:42px;height:42px;">
+
+    </a>
+    <p>
+        <a href="file:///C:/Users/franc/OneDrive/Desktop/html_basic/tweets.html">Want to see my Tweets.</a>
+    </p>
 </body>
 
 </html>
