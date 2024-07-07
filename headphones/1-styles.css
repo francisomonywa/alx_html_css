@@ -1,87 +1,156 @@
-@font-face {
-    font-family: "Source Sans Pro";
-    src: url(../source-sans-pro/SourceSansPro-Bold.otf) url(../source-sans-pro/SourceSansPro-Semibold.otf) url(../source-sans-pro/SourceSansPro-Light.otf) url(../source-sans-pro/SourceSansPro-ExtraLight.otf) url(../source-sans-pro/SourceSansPro-ExtraLightIt.otf) url(../source-sans-pro/SourceSansPro-Regular.otf);
-}
-
- :root {
-    --primary: #ff6565;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
-body {
-    font-family: "Source Sans Pro", sans-serif;
-}
-
-
-/* .background-wrapper {
+                                                @font-face {
+                                            font-family: "Source Sans Pro";
+                                            src: url(../source-sans-pro/SourceSansPro-Bold.otf) url(../source-sans-pro/SourceSansPro-Semibold.otf) url(../source-sans-pro/SourceSansPro-Light.otf) url(../source-sans-pro/SourceSansPro-ExtraLight.otf) url(../source-sans-pro/SourceSansPro-ExtraLightIt.otf) url(../source-sans-pro/SourceSansPro-Regular.otf);
+                                        }
+                                        
+                                        @font-face {
+                                            font-family: "SpinCycle";
+                                            src: url(../Spin-Cycle-OT/spincycle_ot.otf) url(../Spin-Cycle-OT/spincycle_3d_ot.otf);
+                                        }
+                                        
+                                         :root {
+                                            --primary: #ff6565;
+                                            --font: #071629;
+                                        }
+                                        
+                                        * {
+                                            box-sizing: border-box;
+                                            margin: 0;
+                                        }
+                                        
+                                        body {
+                                            font-family: "Source Sans Pro", sans-serif;
+                                        }
+                                        /* .background-wrapper {
     background: url(images/headphones_hero_1.jpg);
     position: absolute;
     top: 0;
     height: 500px;
   } */
-
-
-/* ............Header Styles................. */
-
-header {
-    margin-top: 23px;
-}
-
-header nav {
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-}
-
-header nav ul a {
-    text-decoration: none;
-    /* color: #ffffff; */
-    font-size: 12px;
-    font-weight: 700;
-}
-
-
-/* ............Hero 1 Styles................. */
-
-.hero-1-container {
-    max-width: 1000px;
-    width: 640px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 300px;
-    margin-bottom: 115px;
-}
-
-.hero-1-container h1 {
-    font-size: 2rem;
-}
-
-.hero-1-container h2 {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.hero-1-container button {
-    background-color: var(--primary);
-    border: none;
-    border-radius: 20px;
-    padding: 13px 30px;
-    margin: 40px 0 65px;
-}
-
-.hero-1-container p {
-    font-size: 1rem;
-    line-height: 26px;
-}
+                                        /* ............Header Styles................. */
+                                        
+                                        .menu {
+                                            display: none;
+                                        }
+                                        
+                                        header {
+                                            margin-top: 23px;
+                                        }
+                                        
+                                        header nav {
+                                            @@ -299,
+                                            9+294,
+                                            10 @@ footer {
+                                                margin: 0 auto;
+                                            }
+                                            .footer-container div {
+                                                .footer-container>div {
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+                                                }
+                                                .footer-container div div {
+                                                    @@ -315,
+                                                    4+311,
+                                                    128 @@ footer {
+                                                        margin-top: 71px;
+                                                        font-size: 12px;
+                                                        color: #ffffff8d;
+                                                    }
+                                                }
+                                                /* ............Responsiveness: Tablet................. */
+                                                @media only screen and (max-width: 820px) {
+                                                    header nav {
+                                                        max-width: 820px;
+                                                        width: 685px;
+                                                    }
+                                                    .part-2 {
+                                                        display: grid;
+                                                        grid-template-columns: 207px 207px;
+                                                        gap: 58px;
+                                                    }
+                                                    .dots {
+                                                        display: grid;
+                                                        grid-template-columns: 190px 190px;
+                                                        gap: 76px;
+                                                        row-gap: 42px;
+                                                    }
+                                                    .dots div {
+                                                        height: 190px;
+                                                    }
+                                                    footer {
+                                                        max-width: 820px;
+                                                        padding: 0;
+                                                    }
+                                                    .footer-container {
+                                                        max-width: 714px;
+                                                        margin: 0 auto;
+                                                        padding: 101px 44px 110px 63px;
+                                                    }
+                                                    .footer-container>div {
+                                                        align-items: center;
+                                                    }
+                                                    .copyright {
+                                                        margin-top: 66px;
+                                                    }
+                                                }
+                                                /* ............Responsiveness: Mobile................. */
+                                                @media only screen and (max-width: 480px) {
+                                                    .hero-1-wrapper {
+                                                        background-position-x: -400px;
+                                                    }
+                                                    .hero-2-wrapper {
+                                                        background-position-x: -400px;
+                                                    }
+                                                    header nav {
+                                                        width: 100%;
+                                                        gap: 66px;
+                                                    }
+                                                    .menu {
+                                                        display: block;
+                                                        margin-left: 20px;
+                                                    }
+                                                    header ul a {
+                                                        display: none;
+                                                    }
+                                                    .hero-1-container {
+                                                        width: 100%;
+                                                        margin-left: 9px;
+                                                        margin-right: 9px;
+                                                    }
+                                                    .hero-1-container h1 {
+                                                        margin-bottom: 5px;
+                                                    }
+                                                    .hero-1-container button {
+                                                        margin-top: 20px;
+                                                    }
+                                                    .what-we-do-container {
+                                                        width: 100%;
+                                                    }
+                                                    .part-1 {
+                                                        margin-left: 25px;
+                                                        margin-right: 25px;
+                                                    }
+                                                    .part-2 {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        align-items: center;
+                                                    }
+                                                    .our-results-container {
+                                                        width: 100%;
+                                                    }
+                                                    .dots {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        gap: 42px;
+                                                    }
+                                                    .footer-container {
+                                                        width: 100%;
+                                                        padding: 48px 106px 34px;
+                                                    }
+                                                    .footer-container>div {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        gap: 45px;
+                                                    }
+                                                }
